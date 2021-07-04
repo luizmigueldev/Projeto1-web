@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html,body{
+  height: 100%;
+
+}
+/*Header*/
+header{
+  width: 100%;
+  color: #fff;
+  top: 0;
+}
+
+/* Header contatos*/
+.headerTop{
+  background-color: #303856 ;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  padding: 10px 7%;
+  
+}
+header > div >p{
+  color: #fff;
+  padding: 0;
+}
+
+.header-container{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  width: 100vw;
+  
+}
+
+.facebook{
+  padding-right: 15px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14;
+  text-decoration: none;
+  font-weight: bold;  
+}
+/*Header navegação*/
+
+header > nav{
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 7%;
+}
+
+#img{
+  width: 206px;
+  height: 55px;
+}
+
+.link {
+  color: #303856 ;
+  text-decoration: none;
+  margin: 13px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}
+
+.link:hover{
+  color: #303856CC;
+  text-decoration: underline ;
+}
+/* Container 1*/
+
+#container-inf{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.content1{
+  height: 514px;
+  background-image: url("./image/lop1.jpeg")  ;
+  width: 58.33333333%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.content2{
+  height: 514px;
+  width: 41.66666667%;
+  background-color: #303856;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: #fff;
+}
+
+.content2 > h2{
+  margin: 25px 0;
+}
+
+.content2 > p{
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .header-container{
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 100vw;  
+  }
+  .menu-link{
+    display: none;
+  }
+  #container-inf{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  .content1{
+    width: 100%;
+  }
+  .content2{
+    width: 100%;
+    padding: 100px 0 ;
+  }
+}
