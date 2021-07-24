@@ -148,3 +148,82 @@ header > nav{
     padding: 100px 0 ;
   }
 }
+
+
+.form {
+  padding: 10px;
+  width: 400px;
+  height: calc(100% + 30px);
+  position: relative;
+  top: -15px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: rgba(120,120,120,0.5);
+  float: right;
+  background-color: white;
+  background-clip: padding-box;
+}
+
+.form h2{
+  font-weight: normal;
+  color: #999999;
+  font-size: 21px;
+}
+
+.input-container{
+  margin-top: 20px;
+}
+
+.input-container span{
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-size: 17px;
+}
+
+.input-container input[type=text]{
+  margin-top: 8px;
+  width: 344px;
+  height: 55px;
+  border: 1px solid #ccc;
+}
+
+.input-container input[type=email]{
+  margin-top: 8px;
+  width: 344px;
+  height: 55px;
+  border: 1px solid #ccc;
+}
+
+.warning{
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-size: 17px;
+  margin: 20px;
+}
+
+.content2 .input-submit-container{
+  text-align: center;
+}
+
+.content2 input[type=submit]{
+  margin-top: 30px;
+  color: #303856;
+  font-size: 25px;
+  width: 280px;
+  height: 56px;
+  display: inline-block;
+  background-color: #fff;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 5px solid #4A5097;
+  border-left: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.content2 input[type=submit]:hover{
+  background-color: #212343;
+}
