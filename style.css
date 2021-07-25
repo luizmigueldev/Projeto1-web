@@ -149,21 +149,6 @@ header > nav{
   }
 }
 
-
-.form {
-  padding: 10px;
-  width: 400px;
-  height: calc(100% + 30px);
-  position: relative;
-  top: -15px;
-  border-width: 12px;
-  border-style: solid;
-  border-color: rgba(120,120,120,0.5);
-  float: right;
-  background-color: white;
-  background-clip: padding-box;
-}
-
 .form h2{
   font-weight: normal;
   color: #999999;
@@ -181,19 +166,25 @@ header > nav{
   font-size: 17px;
 }
 
-.input-container input[type=text]{
-  margin-top: 8px;
-  width: 344px;
-  height: 55px;
-  border: 1px solid #ccc;
-}
-
 .input-container input[type=email]{
+  font-size: 18px;
   margin-top: 8px;
-  width: 344px;
+  width: 100%;
   height: 55px;
   border: 1px solid #ccc;
-}
+  border-radius: 10px;
+  padding-left: 10px;
+} 
+
+.input-container input[type=password]{
+  font-size: 18px;
+  margin-top: 8px;
+  width: 100%;
+  height: 55px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding-left: 10px;
+}  
 
 .warning{
   margin-top: 20px;
@@ -212,7 +203,7 @@ header > nav{
   margin-top: 30px;
   color: #303856;
   font-size: 25px;
-  width: 280px;
+  width: 100%;
   height: 56px;
   display: inline-block;
   background-color: #fff;
