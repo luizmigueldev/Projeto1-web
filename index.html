@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <script src="./script/scripts.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./image/balança.png">
-
 
   <title>Nabor Advocacia e Consultoria em Balneário Piçarras - SC</title>
 </head>
@@ -38,7 +38,7 @@
     <div class="content1">
     </div>
     <div class="content2">
-      <form>
+      <form id="form" onsubmit="submit(event)">
         <h2>Login</h2>
         <div class="input-container">
           <span>Email *</span>
@@ -55,31 +55,6 @@
       </form>
     </div>
   </div>
-
-  <script>
-
-    document.querySelector('#acao').addEventListener('click', async () => {
-      let token = localStorage.getItem('token');
-      try {
-        var e = document.querySelector('#email').value;
-        var p = document.querySelector('#password').value;
-
-        let response = await axios.post('https://reqres.in/api/login', {
-          email: e,
-          password: p
-        });
-
-        if (json.data.token) {
-          token = json.data.token;
-          localStorage.setItem('token', token);
-          localStorage.setItem('active', json.status);
-        }
-      }
-      catch (e) {
-
-      }
-    })
-  </script>
 
 </body>
 
