@@ -218,3 +218,7 @@ header > nav{
 .content2 input[type=submit]:hover{
   background-color: #212343;
 }
+
+.error{
+  color: red;
+}

@@ -18,7 +18,8 @@ async function submit(event) {
     }
   }
   catch (e) {
-    console.log(e)
+    const error = document.querySelector(".error");
+    error.textContent = "Usuario e/ou Senha Invalidos!!"
 
   }
 }
