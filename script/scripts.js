@@ -1,6 +1,13 @@
+const token = localStorage.getItem("token");
+const containerInf = document.getElementById('container-inf');
+
+
+if (token) {
+  containerInf.style.display = 'none';
+
+}
 
 const formLogin = document.getElementById("form");
-
 formLogin.addEventListener("submit", submit)
 
 async function submit(event) {
@@ -9,12 +16,14 @@ async function submit(event) {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   try {
-    const { data } = await axios.post("https://reqres.in/api/login", {
+    const { data, status } = await axios.post("https://reqres.in/api/login", {
       email,
       password
     })
-    if (data.status == 200) {
+
+    if (status == 200) {
       localStorage.setItem("token", data.token);
+      containerInf.style.display = 'none';
     }
   }
   catch (e) {

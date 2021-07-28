@@ -140,6 +140,7 @@ header > nav{
     flex: 1;
     flex-direction: column;
   }
+
   .content1{
     width: 100%;
   }
