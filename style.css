@@ -223,3 +223,55 @@ header > nav{
 .error{
   color: red;
 }
+
+#content-api{
+  background-color: #999999;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-api h2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#content-api input[type=number]{
+  width: 30px;
+  margin-bottom: 15px;
+}
+
+#content-api input[type=checkbox]{
+  width: 15px;
+  height: 15px;
+  margin-bottom: 15px;
+}
+
+#content-api input[type=submit]{
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#content-api span{
+  color: #fff;
+
+}
+
+.display-none{
+  display: none;
+}
+
+.image-busca{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-busca img{
+  width: 250px;
+  height: 250px;
+}
