@@ -44,7 +44,7 @@ async function requestApi(event) {
   try {
     const key = "8802371-6f1e7f4cccc616e9ab78e5fd2";
 
-    const urlRequest = `https://pixabay.com/api/?key=${key}&q=${encodeURI(query)}&image_type=photo&per_page`
+    const urlRequest = `https://pixabay.com/api/?key=${key}&q=${encodeURI(query)}&image_type=photo&per_page=5`
     const { data, status } = await axios.get(urlRequest)
     console.log(data)
     if (status == 200) {
